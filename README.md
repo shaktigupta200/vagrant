@@ -27,4 +27,13 @@ Use <a href="http://www.vagrantbox.es/">VagrantBox</a> to copy required box <b>u
  $ vagrant init {title}<br />
  $ vagrant up<br />
  
- 
+ <h4>Basic Vagrant Command</h4>
+ <ul>
+ <li>Destroys the Droplet instance. <b><br />$ vagrant destroy </b> </li>
+ <li>Logs into the Droplet instance using the configured user account. <b><br />$ vagrant ssh </b></li>
+ <li>Powers off the Droplet instance. <b><br />$ vagrant halt </b></li>
+ <li>Runs the configured provisioners and rsyncs any specified config.vm.synced_folder.<b><br />$ vagrant provision</b> </li>
+ <li>Reboots the Droplet instance. <b><br />$ vagrant reload </b></li>
+ <li>Destroys the Droplet instance and recreates it with the same IP address which was previously assigned. <b><br />$ vagrant rebuild </b></li>
+ <li> Outputs the status (active, off, not created) for the Droplet instance.<b><br />$ vagrant status </b></li>
+ </ul>
